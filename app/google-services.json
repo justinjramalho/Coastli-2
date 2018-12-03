@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "293639087062",
+    "firebase_url": "https://coastli-app-b7c74.firebaseio.com",
+    "project_id": "coastli-app-b7c74",
+    "storage_bucket": "coastli-app-b7c74.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:293639087062:android:adcc31a114fe4076",
+        "android_client_info": {
+          "package_name": "com.vinnycoastli.coastli"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "293639087062-vtedd24ag5529cpvbf4ouvh4kufv07kc.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.vinnycoastli.coastli",
+            "certificate_hash": "31fa35954271551679c28192582e462a1dbef5e4"
+          }
+        },
+        {
+          "client_id": "293639087062-1c88glju12jpbg1u955ackpgps76qj7i.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBmcvTYQDkC6jQ7xVeBemlskTgPAwxz7wc"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "293639087062-1c88glju12jpbg1u955ackpgps76qj7i.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
