@@ -359,7 +359,7 @@ public class LoginActivity extends AppCompatActivity implements LoaderCallbacks<
     private void handleSignInResult(Task<GoogleSignInAccount> completedTask) {
         try {
             GoogleSignInAccount account = completedTask.getResult(ApiException.class);
-
+            Log.i("Account",account.toString());
             // Signed in successfully, show authenticated UI.
             updateUI(account);
         } catch (ApiException e) {
@@ -379,6 +379,14 @@ public class LoginActivity extends AppCompatActivity implements LoaderCallbacks<
             // mStatusTextView.setText(getString(R.string.signed_in_fmt, account.getDisplayName()));
 
             findViewById(R.id.sign_in_button).setVisibility(View.GONE);
+            // VINNY Put logic here for sending to next activity
+            Intent finishedSignIn = new Intent(LoginActivity.this, MainActivity.class);
+            Bundle bundle = new Bundle();
+            bundle.putString("account",account.toString());
+            finishedSignIn.putExtras(bundle);
+            Log.i("NEXT ACTIVITY", "STARTING NEXT ACTIVITY");
+            startActivity(finishedSignIn);
+
             // findViewById(R.id.sign_out_and_disconnect).setVisibility(View.VISIBLE);
         } else {
             // mStatusTextView.setText(R.string.signed_out);
