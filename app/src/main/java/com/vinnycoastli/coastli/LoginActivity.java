@@ -90,6 +90,7 @@ public class LoginActivity extends AppCompatActivity implements LoaderCallbacks<
         setContentView(R.layout.activity_login);
         // Set up the login form.
         Log.i("oncreate","start oncreate");
+        setTheme(R.style.AppTheme);
 
         //vinny stuff
         // Configure sign-in to request the user's ID, email address, and basic
