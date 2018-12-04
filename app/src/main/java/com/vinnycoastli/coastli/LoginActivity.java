@@ -20,7 +20,9 @@ import android.os.AsyncTask;
 import android.os.Build;
 import android.os.Bundle;
 import android.provider.ContactsContract;
+import android.text.SpannableString;
 import android.text.TextUtils;
+import android.text.style.UnderlineSpan;
 import android.util.Log;
 import android.view.KeyEvent;
 import android.view.View;
@@ -85,7 +87,7 @@ public class LoginActivity extends AppCompatActivity implements LoaderCallbacks<
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         Log.i("creatin","start creatin");
-
+        setTheme(R.style.AppTheme);
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
         // Set up the login form.
@@ -103,6 +105,13 @@ public class LoginActivity extends AppCompatActivity implements LoaderCallbacks<
 
         SignInButton signInButton = (SignInButton) findViewById(R.id.sign_in_button);
         Log.i("Button click","BUTTON HAS BEEN FOUND");
+
+        //underline text used for link later
+        String udata="Log in for beach staff.";
+        SpannableString content = new SpannableString(udata);
+        content.setSpan(new UnderlineSpan(), 0, udata.length(), 0);
+        final TextView txt_beachstaff = (TextView) findViewById(R.id.txt_beachstaff);
+        txt_beachstaff.setText(content);
 
        signInButton.setOnClickListener(new OnClickListener() {
             @Override
