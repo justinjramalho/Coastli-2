@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">Coastli</string>
     <string name="title_home">Home</string>
-    <string name="title_dashboard">Beachpass</string>
+    <string name="title_dashboard">Beach Badge</string>
     <string name="title_notifications">Account</string>
     <string name="title_activity_login">Sign in</string>
     <!-- Strings related to login -->
@@ -16,8 +16,14 @@
     <string name="permission_rationale">"Contacts permissions are needed for providing email
         completions."
     </string>
+    <string name="cardBig">Deal of the week</string>
+    <string name="card1">Most popular</string>
+    <string name="card2">Family friendly</string>
+
+    <string name="card3">Best facilities</string>
 
     <string name="title_activity_fullscreen">FullscreenActivity</string>
     <string name="dummy_button">Dummy Button</string>
     <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="deal_description">Get 10% discount for 2019 summer beach badges.</string>
 </resources>
